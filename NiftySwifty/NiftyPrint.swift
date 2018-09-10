@@ -8,7 +8,7 @@
 
 import Foundation
 
-class NiftyPrint {
+struct NiftyPrint {
     
     func test() {
         print("Nifty Test Print Success")

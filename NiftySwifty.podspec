@@ -1,7 +1,8 @@
 
 
 Pod::Spec.new do |s|
-
+s.platform = :ios
+s.ios.deployment_target = '10.0'
   s.name         = "NiftySwifty"
   s.version      = "0.0.1"
   s.summary      = "NiftySwifty."
@@ -12,5 +13,5 @@ s.homepage = "https://github.com/thisischristoph/NiftySwifty"
 s.source = { :git => "https://github.com/thisischristoph/NiftySwifty.git", :tag => "#{s.version}" }
 s.framework = "UIKit"
 s.source_files = "NiftySwifty/**/*.{swift}"
-s.resources = "NiftySwifty/**/*.{png,jpeg,jpg,storyboard,xib,xcassets}"
+s.swift_version = "4.0"
 end
