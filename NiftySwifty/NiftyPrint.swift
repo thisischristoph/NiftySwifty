@@ -8,10 +8,11 @@
 
 import Foundation
 
-struct NiftyPrint {
+public class NiftyPrint {
     
-    func test() {
+    public class func test() {
         print("Nifty Test Print Success!")
     }
     
 }
+
