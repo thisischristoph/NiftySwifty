@@ -11,7 +11,7 @@ import Foundation
 struct NiftyPrint {
     
     func test() {
-        print("Nifty Test Print Success")
+        print("Nifty Test Print Success!")
     }
     
 }
