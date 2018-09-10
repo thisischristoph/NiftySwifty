@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
 s.platform = :ios
 s.ios.deployment_target = '10.0'
   s.name         = "NiftySwifty"
-  s.version      = "0.0.2"
+  s.version      = "0.0.3"
   s.summary      = "NiftySwifty."
   s.license = { :type => "MIT", :file => "LICENSE" }
   s.author             = { "Harrison, Chris" => "christopher.harrison.2011@gmail.com" }
