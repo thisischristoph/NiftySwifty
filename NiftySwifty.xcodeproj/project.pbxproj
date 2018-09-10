@@ -8,12 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		8A99D12B2146AD6F00A3BA1D /* NiftySwifty.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A99D1292146AD6F00A3BA1D /* NiftySwifty.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8A99D1322146B06F00A3BA1D /* NiftyPrint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A99D1312146B06F00A3BA1D /* NiftyPrint.swift */; };
+		9659BE5F2B28FE9AC8CD0195 /* Pods_NiftySwifty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD51F0AE3CA056E7E6275534 /* Pods_NiftySwifty.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		281310A3DB55315D38EAAFEA /* Pods-NiftySwifty.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NiftySwifty.release.xcconfig"; path = "Pods/Target Support Files/Pods-NiftySwifty/Pods-NiftySwifty.release.xcconfig"; sourceTree = "<group>"; };
 		8A99D1262146AD6F00A3BA1D /* NiftySwifty.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NiftySwifty.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A99D1292146AD6F00A3BA1D /* NiftySwifty.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NiftySwifty.h; sourceTree = "<group>"; };
 		8A99D12A2146AD6F00A3BA1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A99D1312146B06F00A3BA1D /* NiftyPrint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiftyPrint.swift; sourceTree = "<group>"; };
+		9A6FE9081672387E2ABB87E4 /* Pods-NiftySwifty.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NiftySwifty.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NiftySwifty/Pods-NiftySwifty.debug.xcconfig"; sourceTree = "<group>"; };
+		CD51F0AE3CA056E7E6275534 /* Pods_NiftySwifty.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NiftySwifty.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,17 +27,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9659BE5F2B28FE9AC8CD0195 /* Pods_NiftySwifty.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D139AF75A2BC531BF7F802D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9A6FE9081672387E2ABB87E4 /* Pods-NiftySwifty.debug.xcconfig */,
+				281310A3DB55315D38EAAFEA /* Pods-NiftySwifty.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		409D93FD0D76D26E8AE596B3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD51F0AE3CA056E7E6275534 /* Pods_NiftySwifty.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8A99D11C2146AD6F00A3BA1D = {
 			isa = PBXGroup;
 			children = (
 				8A99D1282146AD6F00A3BA1D /* NiftySwifty */,
 				8A99D1272146AD6F00A3BA1D /* Products */,
+				1D139AF75A2BC531BF7F802D /* Pods */,
+				409D93FD0D76D26E8AE596B3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -48,6 +74,7 @@
 			children = (
 				8A99D1292146AD6F00A3BA1D /* NiftySwifty.h */,
 				8A99D12A2146AD6F00A3BA1D /* Info.plist */,
+				8A99D1312146B06F00A3BA1D /* NiftyPrint.swift */,
 			);
 			path = NiftySwifty;
 			sourceTree = "<group>";
@@ -70,6 +97,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8A99D12E2146AD6F00A3BA1D /* Build configuration list for PBXNativeTarget "NiftySwifty" */;
 			buildPhases = (
+				64978DD3BD93B2FFED7BD4B4 /* [CP] Check Pods Manifest.lock */,
 				8A99D1212146AD6F00A3BA1D /* Sources */,
 				8A99D1222146AD6F00A3BA1D /* Frameworks */,
 				8A99D1232146AD6F00A3BA1D /* Headers */,
@@ -95,6 +123,7 @@
 				TargetAttributes = {
 					8A99D1252146AD6F00A3BA1D = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 				};
 			};
@@ -125,11 +154,33 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		64978DD3BD93B2FFED7BD4B4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NiftySwifty-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8A99D1212146AD6F00A3BA1D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A99D1322146B06F00A3BA1D /* NiftyPrint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,7 +309,9 @@
 		};
 		8A99D12F2146AD6F00A3BA1D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A6FE9081672387E2ABB87E4 /* Pods-NiftySwifty.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -276,6 +329,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ThisIsChristoph.NiftySwifty;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -283,7 +337,9 @@
 		};
 		8A99D1302146AD6F00A3BA1D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 281310A3DB55315D38EAAFEA /* Pods-NiftySwifty.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
